@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Procedural Generation</title>
+    <link type="text/css" rel="stylesheet" href="./css/output.css">
+
+</head>
+<body class="bg-cover bg-fixed" background="https://uploads-ssl.webflow.com/5ec207a448d573153616868a/60e32be0c05d81675a686232_Mesh%2051.jpg">
+    
+    <div class="grid place-items-center">
+        <h1 class="drop-shadow-2xl text-center backdrop-blur-sm border-2 border-gray-50/25 rounded-lg mt-5 w-1/4 px-5 py-10 text-5xl bg-gray-50/40 font-bold">Procedural Generation</h1>
+        <div class="w-1/2 p-5 drop-shadow-2xl backdrop-blur-sm border-2 border-gray-50/25 rounded-lg mt-5 text-2xl bg-gray-50/40 items-center grid">
+            <h1 class="font-bold">
+                Hi, welcome to my research project on procedural generation!
+            </h1>
+            <br>
+            <button class="transition duration-200 ease-in-out border rounded-md border-white-200 bg-gray-100/30 p-2 hover:bg-gray-100/50 my-5" onclick="hideFunction('q1')">What is Procedural Generation?</button>
+            <p class="hidden px-5 text-justify" id="q1">Procedural generation is a powerful method of generating a wide range of assets to fit a wide range of scenarios. From movies to client-requested models, procedural generation is generally faster for repetitive tasks relative to other manual methods. One major advantage of procedural generation is that its actual method, generally referred to as the procedure, only needs to be created once and can then be applied to different scenarios. Of course, this doesn’t simply mean creating methods to be used multiple times, but rather extends to many different fields, including 3D graphics and rendering.</p>
+            <button class="transition duration-200 ease-in-out border rounded-md border-white-200 bg-gray-100/30 p-2 hover:bg-gray-100/50 my-5" onclick="hideFunction('q2')">What does this project use procedural generation for?</button>
+            <p class="hidden px-5 text-justify" id="q2">I used procedural generation to generate buildings. By nature of being procedural, buildings can be generated from many different locations with minimal additional work. I aim to be able to grab building data from any location and generate a model of those buildings, from which more complex calculations can be conducted. This can range from solar-panel placement optimization to flooding simulations and can provide very beneficial information. </p>
+
+        </div>
+    </div>
+	
+</body>
+<script>
+    function hideFunction(idName)
+    {
+        var textField = document.getElementById(idName)
+        if(textField.className == "hidden px-5 text-justify")
+        {
+            textField.className = "px-5 text-justify"
+        }
+        else
+        {
+            textField.className = "hidden px-5 text-justify"
+        }
+    }
+</script>
+</html>
