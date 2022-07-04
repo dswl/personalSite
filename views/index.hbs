@@ -2,23 +2,60 @@
 <html>
 
 <head>
-	<title>Procedural Generation</title>
+	<title>David Liu | HOME</title>
     <link type="text/css" rel="stylesheet" href="./css/output.css">
 
 </head>
-<body class="bg-cover bg-fixed" background="https://uploads-ssl.webflow.com/5ec207a448d573153616868a/60e32be0c05d81675a686232_Mesh%2051.jpg">
+<body class="bg-cover bg-fixed" style="background-color: black"<!--background="https://uploads-ssl.webflow.com/5ec207a448d573153616868a/60e32be0c05d81675a686232_Mesh%2051.jpg"-->>
     
     <div class="grid place-items-center">
-        <h1 class="drop-shadow-2xl text-center backdrop-blur-sm border-2 border-gray-50/25 rounded-lg mt-5 w-1/4 px-5 py-10 text-5xl bg-gray-50/40 font-bold">Procedural Generation</h1>
-        <div class="w-1/2 p-5 drop-shadow-2xl backdrop-blur-sm border-2 border-gray-50/25 rounded-lg mt-5 text-2xl bg-gray-50/40 items-center grid">
-            <h1 class="font-bold">
-                Hi, welcome to my research project on procedural generation!
-            </h1>
+        <!--img class="border-double border-8 w-96 h-96 rounded-full mx-auto" src="./img/selfieS.png"-->
+        <!--
+            <h1 class="drop-shadow-2xl text-center backdrop-blur-sm border-2 border-gray-50/25 rounded-lg mt-5 w-1/4 px-5 py-10 text-5xl bg-gray-50/40 font-bold">David Liu</h1>
+        -->
+        <!--div class="w-1/2 p-5 drop-shadow-2xl backdrop-blur-sm border-2 border-gray-50/25 rounded-lg mt-5 text-2xl bg-gray-50/40 items-center grid"-->
+        <div class="w-1/2 p-5 drop-shadow-2xl backdrop-blur-sm border-gray-50/25 rounded-lg mt-5 text-2xl items-center grid text-white">
+            <div class="flex place-content-center items-center">
+                <h1 class="flex-none text-5xl font-semibold">
+                    Hey, I'm David Liu
+                </h1>
+                <img class="flex-none border-double border-8 w-96 h-96 rounded-full mx-auto" src="./img/selfieS.png">
+            </div>
             <br>
-            <button class="transition duration-200 ease-in-out border rounded-md border-white-200 bg-gray-100/30 p-2 hover:bg-gray-100/50 my-5" onclick="hideFunction('q1')">What is Procedural Generation?</button>
-            <p class="hidden px-5 text-justify" id="q1">Procedural generation is a powerful method of generating a wide range of assets to fit a wide range of scenarios. From movies to client-requested models, procedural generation is generally faster for repetitive tasks relative to other manual methods. One major advantage of procedural generation is that its actual method, generally referred to as the procedure, only needs to be created once and can then be applied to different scenarios. Of course, this doesn’t simply mean creating methods to be used multiple times, but rather extends to many different fields, including 3D graphics and rendering.</p>
-            <button class="transition duration-200 ease-in-out border rounded-md border-white-200 bg-gray-100/30 p-2 hover:bg-gray-100/50 my-5" onclick="hideFunction('q2')">What does this project use procedural generation for?</button>
-            <p class="hidden px-5 text-justify" id="q2">I used procedural generation to generate buildings. By nature of being procedural, buildings can be generated from many different locations with minimal additional work. I aim to be able to grab building data from any location and generate a model of those buildings, from which more complex calculations can be conducted. This can range from solar-panel placement optimization to flooding simulations and can provide very beneficial information. </p>
+            <p class="">
+                I'm an undergraduate student majoring in computer science at the University of Maryland. I'm an avid programmer, machine-learning enthusiast, and digital artist. 
+                <br><br>
+                My passion is building expansive projects with amazing people, utilizing cutting-edge developments to complete a goal.
+                <br><br>
+                I'm always looking for new opportunities and experiences; feel free to reach out to me with any future endeavors.
+            </p>
+            <br>
+            <div class="flex">
+                <button id="LinkedInButton" class="m-1 p-3 rounded-full bg-rose-500 hover:bg-rose-400 transition duration-200 ease-in-out">LinkedIn</button>
+                <button id="DevPostButton" class="m-1 p-3 rounded-full bg-rose-500 hover:bg-rose-400 transition duration-200 ease-in-out">DevPost</button>
+                <button id="GitHubButton" class="m-1 p-3 rounded-full bg-rose-500 hover:bg-rose-400 transition duration-200 ease-in-out">GitHub</button>
+                <a id="EmailButton" class="m-1 p-3 rounded-full bg-rose-500 hover:bg-rose-400 transition duration-200 ease-in-out" href="mailto:davidjinliu@gmail.com">Email</a>
+
+                <script type="text/javascript">
+                    document.getElementById("LinkedInButton").onclick = function () {
+                        window.open("https://www.linkedin.com/in/david-liu-410856204/",'_blank');
+                    };
+                    document.getElementById("DevPostButton").onclick = function () {
+                        window.open("https://devpost.com/davidjinliu?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav",'_blank');
+                    };
+                    document.getElementById("GitHubButton").onclick = function () {
+                        window.open("https://github.com/dswl",'_blank');
+                    };
+                </script>
+            </div>
+            <br>
+
+            <h1 class="text-3xl font-semibold">
+                Experience
+            </h1>
+
+            <!--button class="transition duration-200 ease-in-out border rounded-md border-white-200 bg-gray-100/30 p-2 hover:bg-gray-100/50 my-5" onclick="hideFunction('q1')">What is Procedural Generation?</button>
+            <p class="hidden px-5 text-justify" id="q1">Procedural generation is a powerful method of generating a wide range of assets to fit a wide range of scenarios. From movies to client-requested models, procedural generation is generally faster for repetitive tasks relative to other manual methods. One major advantage of procedural generation is that its actual method, generally referred to as the procedure, only needs to be created once and can then be applied to different scenarios. Of course, this doesn’t simply mean creating methods to be used multiple times, but rather extends to many different fields, including 3D graphics and rendering.</p-->
 
         </div>
     </div>

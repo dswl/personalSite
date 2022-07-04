@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Red Hat Display', defaultTheme.fontFamily.sans],
+        'sans': ['iA Writer Quattro V Regular','Red Hat Display', defaultTheme.fontFamily.sans],
       },
     },
   },
