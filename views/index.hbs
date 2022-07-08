@@ -6,15 +6,15 @@
     <link type="text/css" rel="stylesheet" href="./css/output.css">
 
 </head>
-<body class="bg-cover bg-fixed" style="background-color: black"<!--background="https://uploads-ssl.webflow.com/5ec207a448d573153616868a/60e32be0c05d81675a686232_Mesh%2051.jpg"-->>
-    
+<body class="bg-cover bg-fixed" style="background: black"><!--background="https://uploads-ssl.webflow.com/5ec207a448d573153616868a/60e32be0c05d81675a686232_Mesh%2051.jpg"-->
+    <img src="./img/bgd.svg" class="absolute -z-10 w-screen">
     <div class="grid place-items-center">
         <!--img class="border-double border-8 w-96 h-96 rounded-full mx-auto" src="./img/selfieS.png"-->
         <!--
             <h1 class="drop-shadow-2xl text-center backdrop-blur-sm border-2 border-gray-50/25 rounded-lg mt-5 w-1/4 px-5 py-10 text-5xl bg-gray-50/40 font-bold">David Liu</h1>
         -->
         <!--div class="w-1/2 p-5 drop-shadow-2xl backdrop-blur-sm border-2 border-gray-50/25 rounded-lg mt-5 text-2xl bg-gray-50/40 items-center grid"-->
-        <div class="w-1/2 p-5 drop-shadow-2xl backdrop-blur-sm border-gray-50/25 rounded-lg mt-5 text-2xl items-center grid text-white">
+        <div class="mt-10 w-full lg:w-1/2 p-5 drop-shadow-2xl border-gray-50/25 rounded-lg text-2xl items-center grid text-white">
             <div class="flex place-content-center items-center">
                 <h1 class="flex-none text-5xl font-semibold">
                     Hey, I'm David Liu
@@ -25,16 +25,16 @@
             <p class="">
                 I'm an undergraduate student majoring in computer science at the University of Maryland. I'm an avid programmer, machine-learning enthusiast, and digital artist. 
                 <br><br>
-                My passion is building expansive projects with amazing people, utilizing cutting-edge developments to complete a goal.
+                My passion is building expansive projects with amazing people, utitizing cutting-edge developments to complete a goal.
                 <br><br>
                 I'm always looking for new opportunities and experiences; feel free to reach out to me with any future endeavors.
             </p>
             <br>
             <div class="flex">
-                <button id="LinkedInButton" class="m-1 p-3 rounded-full bg-rose-500 hover:bg-rose-400 transition duration-200 ease-in-out">LinkedIn</button>
-                <button id="DevPostButton" class="m-1 p-3 rounded-full bg-rose-500 hover:bg-rose-400 transition duration-200 ease-in-out">DevPost</button>
-                <button id="GitHubButton" class="m-1 p-3 rounded-full bg-rose-500 hover:bg-rose-400 transition duration-200 ease-in-out">GitHub</button>
-                <a id="EmailButton" class="m-1 p-3 rounded-full bg-rose-500 hover:bg-rose-400 transition duration-200 ease-in-out" href="mailto:davidjinliu@gmail.com">Email</a>
+                <button id="LinkedInButton" class="m-2 p-3 rounded-full bg-rose-500 hover:bg-rose-400 transition duration-200 ease-in-out">LinkedIn</button>
+                <button id="DevPostButton" class="m-2 p-3 rounded-full bg-rose-500 hover:bg-rose-400 transition duration-200 ease-in-out">DevPost</button>
+                <button id="GitHubButton" class="m-2 p-3 rounded-full bg-rose-500 hover:bg-rose-400 transition duration-200 ease-in-out">GitHub</button>
+                <a id="EmailButton" class="m-2 p-3 rounded-full bg-rose-500 hover:bg-rose-400 transition duration-200 ease-in-out" href="mailto:davidjinliu@gmail.com">Email</a>
 
                 <script type="text/javascript">
                     document.getElementById("LinkedInButton").onclick = function () {
@@ -49,10 +49,56 @@
                 </script>
             </div>
             <br>
+            <div class="flex place-items-center">
+                <h1 class="flex-none text-3xl font-semibold">
+                    Experience
+                </h1>
+                <hr class="ml-5 flex-auto">
+            </div>
 
-            <h1 class="text-3xl font-semibold">
-                Experience
-            </h1>
+            <div class="flex flex-col">
+                <div class="grid grid-cols-4 m-4">
+                    <h1 class="col-span-3 text-left">ASSIP Internship</h1>
+                    <h1 class="text-right text-neutral-500">Summer 2021</h1>
+                    <p class="col-span-4 text-neutral-300">text goes here</p>
+                </div>
+                <div class="grid grid-cols-4 m-4">
+                    <h1 class="col-span-3 text-left">Thomas Jefferson HS for Science and Technology</h1>
+                    <h1 class="text-right text-neutral-500">2017-2022</h1>
+                    <p class="col-span-4 text-neutral-300">text goes here</p>
+                </div>
+                <div class="grid grid-cols-4 m-4">
+                    <h1 class="col-span-3 text-left">Rocketry Captain</h1>
+                    <h1 class="text-right text-neutral-500">2020-2022</h1>
+                    <p class="col-span-4 text-neutral-300">text goes here</p>
+                </div>
+            </div>
+
+            <div class="flex place-items-center">
+                <h1 class="flex-none text-3xl font-semibold">
+                    Coding Expertise
+                </h1>
+                <hr class="ml-5 flex-auto">
+            </div>
+
+            <div class="snap-x outer">
+                <div class="snap-center flex flex-col">
+                    <h1 class="">Javascript (NodeJS)</h1>
+                    <p class="text-neutral-300">This entire website was built by me using <br>Node JS, HBS, and Tailwind CSS!</p>
+                </div>
+                <div class="snap-center flex flex-col">
+                    <h1 class="">Python</h1>
+                    <p class="text-neutral-300">I've done a lot of AI projects with Python, including A*, <br>neural networks, and minimax algorithms</p>
+                </div>
+                <div class="snap-center flex flex-col">
+                    <h1 class="">C++</h1>
+                    <p class="text-neutral-300">I've completed tons of computer vision projects with C++, <br>including canny-edge detection, coin valuation detection, <br>and linear algebra projections.</p>
+                </div>
+                <div class="snap-center flex flex-col">
+                    <h1 class="">Java</h1>
+                    <p class="text-neutral-300">I sincerely hope I don't need to code Java ever again, <br>but I'm good at it nonetheless.</p>
+                </div>
+            </div>
 
             <!--button class="transition duration-200 ease-in-out border rounded-md border-white-200 bg-gray-100/30 p-2 hover:bg-gray-100/50 my-5" onclick="hideFunction('q1')">What is Procedural Generation?</button>
             <p class="hidden px-5 text-justify" id="q1">Procedural generation is a powerful method of generating a wide range of assets to fit a wide range of scenarios. From movies to client-requested models, procedural generation is generally faster for repetitive tasks relative to other manual methods. One major advantage of procedural generation is that its actual method, generally referred to as the procedure, only needs to be created once and can then be applied to different scenarios. Of course, this doesn’t simply mean creating methods to be used multiple times, but rather extends to many different fields, including 3D graphics and rendering.</p-->

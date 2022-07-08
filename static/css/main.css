@@ -3,7 +3,44 @@
 @tailwind utilities;
 
 ::selection {
-    background: #eb5e5e;
+    background: #f43f5e;
     /* color:black;
     background:white; */
   }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(24, 24, 24); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  .outer {
+    white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.outer div {
+    display: inline-block;
+    margin: 75px;
+}
+
+html, body {
+  cursor: url('../img/cursorICO2.ico'), default;
+}
