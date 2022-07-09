@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .cusAnimation 
+  {
+    @apply duration-1000 relative transform transition-all translate-y-12 ease-out;
+  }
+}
+
 ::selection {
     background: #f43f5e;
     /* color:black;
@@ -42,5 +49,5 @@
 }
 
 html, body {
-  cursor: url('../img/cursorICO2.ico'), default;
+  /* cursor: url('../img/cursorICO2.ico'), default; */
 }

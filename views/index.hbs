@@ -6,6 +6,20 @@
     <link type="text/css" rel="stylesheet" href="./css/output.css">
 
 </head>
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    setTimeout(function(){
+        var replacers = document.querySelectorAll('[data-replace]');
+        for(var i=0; i<replacers.length; i++){
+            let replaceClasses = JSON.parse(replacers[i].dataset.replace.replace(/'/g, '"'));
+            Object.keys(replaceClasses).forEach(function(key) {
+                replacers[i].classList.remove(key);
+                replacers[i].classList.add(replaceClasses[key]);
+            });
+        }
+    }, 1);
+});
+</script>
 <body class="bg-cover bg-fixed" style="background: black"><!--background="https://uploads-ssl.webflow.com/5ec207a448d573153616868a/60e32be0c05d81675a686232_Mesh%2051.jpg"-->
     <img src="./img/bgd.svg" class="absolute -z-10 w-screen">
     <div class="grid place-items-center">
@@ -14,7 +28,7 @@
             <h1 class="drop-shadow-2xl text-center backdrop-blur-sm border-2 border-gray-50/25 rounded-lg mt-5 w-1/4 px-5 py-10 text-5xl bg-gray-50/40 font-bold">David Liu</h1>
         -->
         <!--div class="w-1/2 p-5 drop-shadow-2xl backdrop-blur-sm border-2 border-gray-50/25 rounded-lg mt-5 text-2xl bg-gray-50/40 items-center grid"-->
-        <div class="mt-10 w-full lg:w-1/2 p-5 drop-shadow-2xl border-gray-50/25 rounded-lg text-2xl items-center grid text-white">
+        <div class="mt-10 w-full lg:w-1/2 p-5 drop-shadow-2xl border-gray-50/25 rounded-lg text-2xl items-center grid text-white translate-y-12 opacity-0 cusAnimation" data-replace='{ "translate-y-12": "translate-y-0","opacity-0":"opacity-100" }'>
             <div class="flex place-content-center items-center">
                 <h1 class="flex-none text-5xl font-semibold">
                     Hey, I'm David Liu
