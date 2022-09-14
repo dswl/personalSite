@@ -701,6 +701,18 @@ video {
   align-items: center;
 }
 
+.place-self-center {
+  place-self: center;
+}
+
+.place-self-stretch {
+  place-self: stretch;
+}
+
+.self-center {
+  align-self: center;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -790,6 +802,14 @@ video {
 
 .text-justify {
   text-align: justify;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.align-text-bottom {
+  vertical-align: text-bottom;
 }
 
 .text-5xl {

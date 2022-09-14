@@ -39,7 +39,7 @@
             <p class="">
                 I'm an undergraduate student majoring in computer science at the University of Maryland. I'm an avid programmer, machine-learning enthusiast, and digital artist. 
                 <br><br>
-                My passion is building expansive projects with amazing people, utitizing cutting-edge developments to complete a goal.
+                My passion is building expansive projects with amazing people, utilizing cutting-edge developments to complete a goal.
                 <br><br>
                 I'm always looking for new opportunities and experiences; feel free to reach out to me with any future endeavors.
             </p>
@@ -65,21 +65,60 @@
             <br>
             <div class="flex place-items-center">
                 <h1 class="flex-none text-3xl font-semibold">
-                    Experience
+                    Education
                 </h1>
                 <hr class="ml-5 flex-auto">
             </div>
 
             <div class="flex flex-col">
                 <div class="grid grid-cols-4 m-4">
+                    <h1 class="self-center col-span-3 text-left align-middle">University of Maryland</h1>
+                    <button id="umdBut" class="m-2 p-3 rounded-full bg-rose-500 hover:bg-rose-400 transition duration-200 ease-in-out">Details</button>
+                    <p id="umdButD" class="col-span-3 text-neutral-300 hidden">
+                        Bachelor of Science, Computer Science, Economics Double Major, Presidential Scholar
+                    </p>
+                    <h1 id="umdButS" class="text-right text-neutral-500 hidden">Anticipated 2025<br>GPA 4.0</h1>
+                </div>
+                <div class="grid grid-cols-4 m-4">
+                    <h1 class="self-center col-span-3 text-left align-middle">Thomas Jefferson HS for Science and Technology</h1>
+                    <button id="tjBut" class="m-2 p-3 rounded-full bg-rose-500 hover:bg-rose-400 transition duration-200 ease-in-out">Details</button>
+                    <p id="tjButD" class="col-span-3 text-neutral-300 hidden">
+                        Relevant Coursework: Artificial Intelligence, Computer Vision, Web/Mobile App Development, Computer Systems Research, Multivariable Calculus, Linear Algebra, AP Computer Science + Data Structures, AP Calculus BC, AP Physics C, Design and Tech
+                    </p>
+                    <h1 id="tjButS" class="text-right text-neutral-500 hidden">2017-2022<br>GPA 4.397</h1>
+                </div>
+                <script type="text/javascript">
+                    document.getElementById("umdBut").onclick = function () {
+                        toggleElement("umdButD")
+                        toggleElement("umdButS")
+                    };
+                    document.getElementById("tjBut").onclick = function () {
+                        toggleElement("tjButD")
+                        toggleElement("tjButS")
+                    };
+                </script>
+            </div>
+            <br>
+            <div class="flex place-items-center">
+                <h1 class="flex-none text-3xl font-semibold">
+                    Experience
+                </h1>
+                <hr class="ml-5 flex-auto">
+            </div>
+            <div class="flex flex-col">
+                <div class="grid grid-cols-4 m-4">
                     <h1 class="col-span-3 text-left">ASSIP Internship</h1>
                     <h1 class="text-right text-neutral-500">Summer 2021</h1>
-                    <p class="col-span-4 text-neutral-300">text goes here</p>
+                    <p class="col-span-4 text-neutral-300">
+                        Researched how online school impacts the learning of students. Guided a team of other interns to find results. Devised anonymization algorithms, designed data analysis techniques, analyzed over 240 entries. Discovered statistically significant results with P-values significantly under 0.05. Delineated findings to a committee of 10-15 people. 
+                    </p>
                 </div>
                 <div class="grid grid-cols-4 m-4">
                     <h1 class="col-span-3 text-left">Thomas Jefferson HS for Science and Technology</h1>
                     <h1 class="text-right text-neutral-500">2017-2022</h1>
-                    <p class="col-span-4 text-neutral-300">text goes here</p>
+                    <p class="col-span-4 text-neutral-300">
+                        text goes here
+                    </p>
                 </div>
                 <div class="grid grid-cols-4 m-4">
                     <h1 class="col-span-3 text-left">Rocketry Captain</h1>
@@ -110,21 +149,31 @@
                 </div>
                 <div class="snap-center flex flex-col">
                     <h1 class="">Java</h1>
-                    <p class="text-neutral-300">I sincerely hope I don't need to code Java ever again, <br>but I'm good at it nonetheless.</p>
+                    <p class="text-neutral-300">Java :)</p>
                 </div>
             </div>
-
-            <!--button class="transition duration-200 ease-in-out border rounded-md border-white-200 bg-gray-100/30 p-2 hover:bg-gray-100/50 my-5" onclick="hideFunction('q1')">What is Procedural Generation?</button>
-            <p class="hidden px-5 text-justify" id="q1">Procedural generation is a powerful method of generating a wide range of assets to fit a wide range of scenarios. From movies to client-requested models, procedural generation is generally faster for repetitive tasks relative to other manual methods. One major advantage of procedural generation is that its actual method, generally referred to as the procedure, only needs to be created once and can then be applied to different scenarios. Of course, this doesn’t simply mean creating methods to be used multiple times, but rather extends to many different fields, including 3D graphics and rendering.</p-->
-
         </div>
     </div>
 	
 </body>
 <script>
-    function hideFunction(idName)
+    function toggleElement(idName)
     {
         var textField = document.getElementById(idName)
+        
+        if(textField.className.includes("hidden"))
+        {
+            textField.className = textField.className.replace("hidden", "")
+        }
+        else
+        {
+            textField.className += " hidden"
+        }
+    }
+    function hideFunction(idName) //DEPRECIATED, use toggleElement instead
+    {
+        var textField = document.getElementById(idName)
+        
         if(textField.className == "hidden px-5 text-justify")
         {
             textField.className = "px-5 text-justify"
